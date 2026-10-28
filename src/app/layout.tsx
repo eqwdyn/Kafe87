@@ -16,7 +16,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Кафе 87 — уютное место для завтраков и кофе",
+  title: "Кафе 87",
   description:
     "Кафе 87 — уютное место для завтраков и кофе в мягкой пастельной атмосфере",
 };
