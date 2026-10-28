@@ -10,7 +10,7 @@ const amenities = [
   { label: "Wi-Fi", icon: "📶" },
   { label: "Кофе с собой", icon: "☕" },
   { label: "Завтрак", icon: "🍳" },
-  { label: "Предзаказ онлайн", icon: "📱" },
+  //   { label: "Предзаказ онлайн", icon: "📱" },
 ];
 
 export const AmenitiesGrid = ({}) => {
