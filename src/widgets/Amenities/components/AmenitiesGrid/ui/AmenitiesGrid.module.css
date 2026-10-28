@@ -1,0 +1,40 @@
+.amenitiesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.amenityCard {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 16px 20px;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 20px rgba(120, 80, 40, 0.04);
+  transition: all 0.3s ease;
+}
+
+.amenityCard:hover {
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: var(--shadow-soft);
+}
+
+.amenityIcon {
+  font-size: 1.3rem;
+  flex-shrink: 0;
+}
+
+.amenityLabel {
+  font-family: var(--font-inter), system-ui, sans-serif;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  font-weight: 400;
+}
+
+@media (max-width: 600px) {
+  .amenitiesGrid {
+    grid-template-columns: 1fr;
+  }
+}

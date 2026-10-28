@@ -1,0 +1,47 @@
+.atmosphereContent {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.atmosphereText {
+  font-family: var(--font-inter), system-ui, sans-serif;
+  font-size: clamp(1.05rem, 2.2vw, 1.2rem);
+  line-height: 1.9;
+  color: var(--text-primary);
+  max-width: 800px;
+}
+
+.atmosphereImages {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.atmosphereImageWrap {
+  position: relative;
+  height: 320px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+}
+
+.atmosphereImage {
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.atmosphereImageWrap:hover .atmosphereImage {
+  transform: scale(1.05);
+}
+
+@media (max-width: 900px) {
+  .atmosphereImages {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .atmosphereImageWrap {
+    height: 260px;
+  }
+}

@@ -1,0 +1,53 @@
+﻿.menuHeader {
+  margin-bottom: 32px;
+}
+
+.menuTabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.menuTab {
+  font-family: var(--font-inter), system-ui, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid var(--border-color);
+  padding: 10px 22px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(120, 80, 40, 0.04);
+}
+
+.menuTab:hover {
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--text-primary);
+}
+
+.menuTabActive {
+  background: var(--bg-card);
+  color: var(--text-primary);
+  border-color: var(--accent-gold);
+  box-shadow: var(--shadow-soft);
+}
+
+.menuGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 600px;
+}
+
+@media (max-width: 600px) {
+  .menuTabs {
+    gap: 8px;
+  }
+
+  .menuTab {
+    font-size: 0.85rem;
+    padding: 8px 16px;
+  }
+}

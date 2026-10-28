@@ -1,0 +1,54 @@
+﻿.menuCard {
+  background: var(--bg-card);
+  border-radius: 16px;
+  padding: 28px 28px 32px;
+  box-shadow: 0 10px 40px rgba(120, 80, 40, 0.08);
+  border: 1px solid rgba(190, 150, 90, 0.15);
+}
+
+.menuCardTitle {
+  font-family: var(--font-playfair), Georgia, serif;
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: var(--accent-gold);
+  margin-bottom: 18px;
+  letter-spacing: -0.01em;
+}
+
+.menuList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.menuList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  border-bottom: 1px dashed rgba(190, 150, 90, 0.25);
+  padding-bottom: 10px;
+  font-family: var(--font-inter), system-ui, sans-serif;
+  font-size: 0.98rem;
+}
+
+.menuList li:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.menuList span:first-child {
+  color: var(--text-primary);
+  font-weight: 400;
+}
+
+.menuList span:last-child {
+  color: var(--accent-gold);
+  font-family: var(--font-playfair), Georgia, serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
